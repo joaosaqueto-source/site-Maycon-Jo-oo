@@ -13,3 +13,49 @@
     <img src="barber.shop.jpg">
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Praticando CSS</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: lightgray; /* Cor do fundo */
+        }
+        h1 {
+            color: orange; /* Cor do título no interno */
+            text-align: center; /* Alinhamento do título */
+        }
+        p {
+            font-size: 20px; /* Tamanho da fonte do parágrafo */
+            color: red;     /* Tentativa de cor no interno */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meu Título Estilizado</h1>
+
+    <p style="color: blue;">
+        Este parágrafo testa a hierarquia do CSS. 
+        Mesmo que o Interno diga "vermelho" e o Externo diga "verde", 
+        eu ficarei azul por causa do estilo Inline!
+    </p>
+
+</body>
+</html>
+
+/* CSS EXTERNO */
+
+h1 {
+    color: darkblue; /* Conflito com o Interno */
+}
+
+p {
+    color: green;    /* Conflito com o Interno e Inline */
+    font-family: Arial, sans-serif;
+}
